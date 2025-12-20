@@ -28,7 +28,7 @@ def count_cat(text: str) -> dict[str, int]:
             count["punctuation"] += 1
         else:
             pass
-    
+
     return count
 
 

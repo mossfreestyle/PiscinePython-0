@@ -2,14 +2,18 @@
 
 import sys
 
+
 def is_int(nb):
+
     try:
         int(nb)
         return True
     except ValueError:
         return False
 
+
 try:
+
     if len(sys.argv) == 1:
         exit()
     elif len(sys.argv) > 2:
