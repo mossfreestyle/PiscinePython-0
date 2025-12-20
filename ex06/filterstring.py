@@ -17,19 +17,19 @@ def main():
     try:
         if len(sys.argv) != 3:
             raise AssertionError("the arguments are bad")
-        
+
         text = sys.argv[1]
         try:
             nb = int(sys.argv[2])
         except ValueError:
             raise AssertionError("the arguments are bad")
-        
+
         result = words_by_len(text, nb)
         print(result)
-    
+
     except AssertionError as e:
         print(f"AssertionError: {e}")
-    
+
     except Exception as e:
         print(f"Error: {e}")
 
