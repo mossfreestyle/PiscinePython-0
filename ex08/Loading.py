@@ -1,6 +1,6 @@
 import sys
 import os
-from typing import Generator, Iterable, Any
+from typing import Generator, Any
 
 
 def ft_tdqm(lst: range) -> Generator[Any, None, None]:

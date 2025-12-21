@@ -1,13 +1,13 @@
 from typing import Any
 
-def NULL_not_found(object: Any)-> int:
-    obj_type = type(object)
+
+def NULL_not_found(object: Any) -> int:
 
     if object is None:
         print(f"Nothing: {object} <class 'NoneType'>")
     elif isinstance(object, float) and object != object:
         print(f"Cheese: {object} <class 'Float'>")
-    elif isinstance(object, bool) and object == False:
+    elif isinstance(object, bool) and object is False:
         print(f"Fake: {object} <class 'bool'>")
     elif isinstance(object, int) and object == 0:
         print(f"Zero: {object} <class 'int'>")
@@ -17,4 +17,3 @@ def NULL_not_found(object: Any)-> int:
         print("Type not found")
         return 1
     return 0
-
